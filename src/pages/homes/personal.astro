@@ -1,0 +1,343 @@
+---
+import Layout from '../../layouts/PageLayout.astro';
+import Header from '../../components/widgets/Header.astro';
+import Hero from '../../components/widgets/Hero.astro';
+import Content from '../../components/widgets/Content.astro';
+import CallToAction from '../../components/widgets/CallToAction.astro';
+import Features3 from '../../components/widgets/Features3.astro';
+import Github from '../../components/widgets/Github.astro';
+import Steps from '../../components/widgets/Steps.astro';
+import jamImage from '../../assets/images/jam.webp';
+const metadata = {
+  title: 'Personal Homepage Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '#' },
+        { text: 'About', href: '#about' },
+        { text: 'Resume', href: '#resume' },
+        { text: 'Porfolio', href: '#porfolio' },
+        { text: 'Github', href: '#github' },
+        { text: 'Blog', href: '#blog' },
+      ]}
+      actions={[
+        {
+          text: 'Hire me',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="Julian Mosquera"
+    tagline="Web developement portfolio"
+    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: '/' }]}
+  >
+    <Fragment slot="subtitle">
+      I am a qualified and professional web developer with over 1 year of experience in backend and frontend
+      developement. Strong creative and analytical skills. Team player with an eye for detail. My long term goal is to
+      blend my anthropology background with my current IA formation into the web experiences I love to create.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:brand-dribbble',
+        callToAction: {
+          target: '_blank',
+          text: 'Dribbble',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-behance',
+        callToAction: {
+          target: '_blank',
+          text: 'Behance',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-pinterest',
+        callToAction: {
+          target: '_blank',
+          text: 'Pinterest',
+          href: '#',
+        },
+      },
+    ]}
+    image={{
+      src: jamImage,
+      alt: 'J.A.M Logo',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
+      <p>I'm a passionate anthropologist and web developer based in Colombia.</p>
+      <br />
+      <p>
+        What's my current goal? Adding a neuro-cultural twist to development, ensuring digital solutions are not just
+        techy but also human-friendly and adaptable.
+      </p>
+      <br />
+      <p>
+        And what's on the horizon? I'm deeply immersed in unraveling the intricacies of the human mind while
+        simultaneously riding the waves of Machine Learning on the flip side. This fuels my mission to seamlessly merge
+        AI with Anthropology and bio-cultural approaches in the digital solutions I aim to craft.
+      </p>
+      <br />
+      <p>🚀 Welcome to the fun side of code and culture! 😎 Where cables meet neurons.</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Stack"
+    subtitle="The techs I love to use"
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'React',
+        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+      },
+      {
+        title: 'Angular',
+        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+      },
+      {
+        title: 'Next.js',
+        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
+      },
+      {
+        title: 'Astro',
+        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
+      },
+      {
+        title: 'Node.js',
+        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
+      },
+      {
+        title: 'Express',
+        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
+      },
+      {
+        title: 'Nest.js',
+        description: 'Knowledgeable in designing for both print materials and digital platforms.',
+      },
+      {
+        title: 'Tensorflow.js',
+        description: 'Diligent in maintaining precision and quality in all design work.',
+      },
+      {
+        title: 'Pytorch',
+        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
+      },
+    ]}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Experience"
+    items={[
+      {
+        title:
+          'Academlo <br /> <span class="font-normal">Remote, Mexico. MX</span> <br /> <span class="text-sm font-normal">2023 - 2023</span>',
+        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'No Country.<br /> <span class="font-normal">Remote, Argentina. AR</span> <br /> <span class="text-sm font-normal">2023 - 2024</span>',
+        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'CoCode.<br /> <span class="font-normal">Remote, Colombia, CO</span> <br /> <span class="text-sm font-normal">2023 - current</span>',
+        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Education"
+    items={[
+      {
+        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="porfolio"
+    title="Projects I've developed"
+    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwing, Chakra UI, Material UI, Shadcn, Framer Motion, Three.js, React Three Fiber, Blender, Redux, Zustand, Node.js, Express, Nest.js, PostgreSQL, MySQL, SQLite, Prisma ORM, Sequelize.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Web-dev: <br /><span class="text-2xl">Fullstack web-dev projects.</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Automation and tooling help get things done quicker. This is why I tend to develop simple tools to automate and make it easier to accomplish a repetitive and simple task. Here are some of those solutions.',
+      },
+      {
+        title: 'Techs:',
+        description: `Python, Tkinter, Bash (sh), Javascript, TypeScript.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Art and Music Poster Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Tools and automations: <br /><span class="text-2xl">Small projects that have helped me make my life easier</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `I'm still learning on this subject, but I strongly consider the best way to get to know something is by doing. Currently, my goal is to solve specific problems of specific probational groups while researching on them to integrate my academical skills with my tech skills.`,
+      },
+      {
+        title: 'Techs:',
+        description: `Python, Pytorch, TensorFlow, Numpy, Pandas, MatPlotLib, Jupyter.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1495592822108-9e6261896da8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Fashion e-commerce Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        AI and Data: <br /><span class="text-2xl">Projects I'm building merging Antrhopology and AI</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Github
+    id="github"
+    title="Personal Github profile"
+    subtitle="Here you can find the projects I've worked in"
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Let's create together"
+    subtitle="Ready to transform your vision into captivating designs?"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
+  />
+
