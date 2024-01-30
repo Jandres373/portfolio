@@ -8,6 +8,7 @@ import Features3 from '../../components/widgets/Features3.astro';
 import Github from '../../components/widgets/Github.astro';
 import Steps from '../../components/widgets/Steps.astro';
 import jamImage from '../../assets/images/jam.webp';
+import Slider from '../../components/widgets/Slider.astro'
 const metadata = {
   title: 'Personal Homepage Demo',
 };
@@ -118,41 +119,42 @@ const metadata = {
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
-      {
+     {
         title: 'React',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+        description: 'I love React, and it\'s one of the main frontend frameworks I use. I enjoy building reusable components, managing complex state, and creating intuitive interfaces with React For small or medium size projects.',
       },
       {
         title: 'Angular',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+        description: 'I don\'t have extensive experience with Angular, but I\'m familiar with its core concepts like components, directives, services etc. I\'ve built a few small projects with Angular and would love to expand my knowledge further.',
       },
       {
         title: 'Next.js',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
+        description: 'Next is the tech i\'d use for large or medium projects when I need interactivity and a fullstack framework. I love its hybrid approach to static and server-rendered pages and its flexibility. I\'ve built several projects with Next and it\'s a joy to work with.',
       },
+
       {
         title: 'Astro',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
+        description: '`Astro` is the static site generator I use for building my personal site. I love its component-based approach and how well it integrates with React and markdown. Building sites with Astro feels super fast and intuitive.',
       },
       {
         title: 'Node.js',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
+        description: '`Node.js` is my go-to for building robust APIs and backend services. I love its asynchronous non-blocking nature which makes it perfect for realtime applications and microservices. Some of my most robust projects were built with Node.js/Express.',
       },
       {
         title: 'Express',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
+        description: 'I\'d choose express for small backend projects. I love how minimal yet extensible it is. I\'ve built many small to medium sized APIs with Express for CRUD operations and authentication. Its routing capabilities are very flexible and it integrates well with other Node.js tools and libraries.',
       },
       {
         title: 'Nest.js',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
+        description: 'Nest.js would definetely be my choice for building large scale backend applications or REST APIs, microservices or more complex apps. I love its progressive framework approach and how seamlessly it integrates with TypeScript. Some key features like dependency injection, modules and OOP principles make it a joy to work with for complex backend systems.',
       },
       {
         title: 'Tensorflow.js',
-        description: 'Diligent in maintaining precision and quality in all design work.',
+        description: 'I\'m just starting my journey with ML, but. I enjoy exploring ML concepts with Tensorflow.js for browser or Node.js based projects. Some areas that interest me include computer vision, NLP and time series forecasting. I find its intuitive APIs and seamless integration with frontend frameworks very appealing.',
       },
       {
         title: 'Pytorch',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
+        description: 'Pytorch would be my choice for building deep learning models and training complex neural networks. I find its dynamic graph execution, built-in support for GPU acceleration and flexibility make it a very powerful framework for computer vision, NLP and general deep learning tasks. I\'ve built a few basic deep learning models with Pytorch and would love to expand my knowledge further.',
       },
     ]}
   />
@@ -192,11 +194,11 @@ const metadata = {
     title="Education"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `Anthropologist <br /> <span class="font-normal">Universidad del Cauca - Universidad de Antioquia</span> <br /> <span class="text-sm font-normal">2013 - 2020</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `Fullstack web development <br /> <span class="font-normal">Academlo</span> <br /> <span class="text-sm font-normal">2023 - 2023</span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -208,7 +210,7 @@ const metadata = {
   <Content
     id="porfolio"
     title="Projects I've developed"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    subtitle="This is something I'm still working on but here are a few projects I've worked on and this is the place where I'd be uploading everything I do in the future:"
     isReversed
     items={[
       {
@@ -217,9 +219,9 @@ const metadata = {
           'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
       },
       {
-        title: 'Role:',
+        title: 'Techs:',
         description:
-          'HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwing, Chakra UI, Material UI, Shadcn, Framer Motion, Three.js, React Three Fiber, Blender, Redux, Zustand, Node.js, Express, Nest.js, PostgreSQL, MySQL, SQLite, Prisma ORM, Sequelize.',
+          'HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind, Chakra UI, Material UI, Shadcn, Framer Motion, Three.js, React Three Fiber, Blender, Redux, Zustand, Node.js, Express, Nest.js, PostgreSQL, MySQL, SQLite, Prisma ORM, Sequelize.',
       },
     ]}
     image={{
@@ -273,7 +275,8 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Tools and automations: <br /><span class="text-2xl">Small projects that have helped me make my life easier</span>
+        Tools and automations: <br /><span class="text-2xl">Small projects that have helped me make my life easier</span
+        >
       </h3>
     </Fragment>
 
@@ -321,11 +324,7 @@ const metadata = {
 
   <!-- Testimonials Widget *********** -->
 
-  <Github
-    id="github"
-    title="Personal Github profile"
-    subtitle="Here you can find the projects I've worked in"
-  />
+  <Github id="github" title="Personal Github profile" subtitle="Here you can find the projects I've worked in" />
 
   <!-- CallToAction Widget *********** -->
 
@@ -340,4 +339,4 @@ const metadata = {
       },
     ]}
   />
-
+</Layout>

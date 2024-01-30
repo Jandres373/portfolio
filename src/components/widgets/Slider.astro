@@ -1,0 +1,122 @@
+---
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+import Headline from '../../components/ui/Headline.astro';
+
+import javascript from '../../assets/images/techsPNG/javascript.png';
+import typescript from '../../assets/images/techsPNG/typescript.png';
+import python from '../../assets/images/techsPNG/python.png';
+import java from '../../assets/images/techsPNG/java.png';
+import angular from '../../assets/images/techsPNG/angular.png';
+import react from '../../assets/images/techsPNG/react.png';
+import nodeJs from '../../assets/images/techsPNG/nodeJs.png';
+import postgresql from '../../assets/images/techsPNG/postgresql.png';
+
+const techs = {
+  title: 'Technologies',
+  slides: [
+    {
+      title: 'JavaScript',
+      logo: javascript.src,
+    },
+    {
+      title: 'TypeScript',
+      logo: typescript.src,
+    },
+    {
+      title: 'Python',
+      logo: python.src,
+    },
+    {
+      title: 'java',
+      logo: java.src,
+    },
+    {
+      title: 'Angular',
+      logo: angular.src,
+    },
+    {
+      title: 'React',
+      logo: react.src,
+    },
+    {
+      title: 'Node.js',
+      logo: nodeJs.src,
+    },
+    {
+      title: 'Postgresql',
+      logo: postgresql.src,
+    },
+  ],
+};
+
+const {
+  title = '',
+  subtitle = '',
+  tagline = '',
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props as Slider;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <div class="container">
+    <div class="slider">
+      <div class="slider-inner">
+        {
+          techs.slides.map((slide) => (
+            <div class="slide">
+              <img src={slide.logo} alt="logo" />
+            </div>
+          ))
+        }
+        {
+          techs.slides.map((slide) => (
+            <div class="slide">
+              <img src={slide.logo} alt="logo" />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</WidgetWrapper>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-inner {
+    width: 200%; /* Duplicamos el ancho para contener dos conjuntos de elementos */
+    display: flex;
+    animation: scrollAnimation 15s linear infinite;
+  }
+
+  .slide {
+    flex: 0 0 12.5%; /* Ajustamos el ancho según el número de elementos en la fila */
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    box-sizing: border-box; /* Asegura que el margen no afecte el ancho total */
+  }
+
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%); /* Ajusta el porcentaje según el número de elementos en la fila */
+    }
+  }
+</style>
