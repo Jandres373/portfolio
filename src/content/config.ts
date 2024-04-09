@@ -63,6 +63,18 @@ const postCollection = defineCollection({
   }),
 });
 
+const appCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    publishDate: z.coerce.date(),
+    title: z.string(),
+    description: z.string(),
+    poster: z.string(),
+    tags: z.string().array(),
+  }),
+});
+
 export const collections = {
   post: postCollection,
+  apps: appCollection,
 };

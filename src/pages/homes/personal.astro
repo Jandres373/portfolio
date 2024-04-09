@@ -8,7 +8,6 @@ import Features3 from '../../components/widgets/Features3.astro';
 import Github from '../../components/widgets/Github.astro';
 import Steps from '../../components/widgets/Steps.astro';
 import jamImage from '../../assets/images/jam.webp';
-import Slider from '../../components/widgets/Slider.astro'
 const metadata = {
   title: 'Personal Homepage Demo',
 };
@@ -59,27 +58,19 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'tabler:brand-linkedin',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
-          href: '#',
+          text: 'Linkedin',
+          href: 'https://www.linkedin.com/in/julian-mosquera-09762029a/',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'tabler:brand-github',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
+          text: 'Github',
+          href: 'https://github.com/Jandres373',
         },
       },
     ]}
@@ -216,7 +207,7 @@ const metadata = {
       {
         title: 'Description:',
         description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+          'From web pages to chrome extensions. Everything I\'d like to show you about my web developement background.',
       },
       {
         title: 'Techs:',
@@ -229,10 +220,10 @@ const metadata = {
       alt: 'Tech Design Image',
     }}
     callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
+      target: '',
+      text: 'Go to web projects',
       icon: 'tabler:chevron-right',
-      href: '#',
+      href: '/projects/web',
     }}
   >
     <Fragment slot="content">
@@ -267,10 +258,10 @@ const metadata = {
       alt: 'Art and Music Poster Image',
     }}
     callToAction={{
-      target: '_blank',
+      target: '',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
-      href: '#',
+      href: '/projects/tools',
     }}
   >
     <Fragment slot="content">

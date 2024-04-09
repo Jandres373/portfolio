@@ -1,0 +1,24 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const title = `Web Projects`;
+const apps = (await getCollection('apps')).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+console.log(apps);
+---
+
+<Layout metadata={{ title }}>
+  <section class="flex items-center h-full p-16">
+    <ul>
+      {
+        apps.map((app) => {
+          return (
+            <li>
+              <a href={app.slug}>{app.slug}</a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </section>
+</Layout>
