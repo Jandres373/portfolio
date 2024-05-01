@@ -70,11 +70,26 @@ const appCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     poster: z.string(),
+    link: z.string(),
     tags: z.string().array(),
   }),
 });
 
+const toolCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    publishDate: z.coerce.date(),
+    title: z.string(),
+    description: z.string(),
+    poster: z.string(),
+    link: z.string(),
+    tags: z.string().array(),
+  }),
+});
+
+
 export const collections = {
   post: postCollection,
   apps: appCollection,
+  tools: toolCollection,
 };

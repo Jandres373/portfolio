@@ -1,17 +1,16 @@
 ---
-publishDate: 2024-04-09T00:00:00Z
-title: Meow english app.
-description: Meow an app to help people learn english.
-poster: https://res.cloudinary.com/dwzcbbipf/image/upload/v1714506663/portfolio/abfqswgkmdf7pqudlwsp.png
+publishDate: 2023-08-18T00:00:00Z
+title: Users crud.
+description: This was part of my learning process. One of the first encounters I had with React.
+poster: https://res.cloudinary.com/dwzcbbipf/image/upload/v1714457266/portfolio/psqd3lynpgntegrc7f1y.png
 link: https://acd-react-entregable-4.netlify.app/
 tags:
-  - Next
-  - Fullstack
-  - Web
-  - App
+  - React
+  - Vite
+  - JavasScript
 ---
 
-# Meow: A Comprehensive English Learning Platform
+# Basic users crud.: A Comprehensive English Learning Platform
 
 Empowering Personalized Language Acquisition
 
@@ -22,10 +21,7 @@ Backend Architecture:
 * Nest.js: Nest.js provides a robust and scalable foundation for the backend, offering a modular structure and streamlined development process.
 * PostgreSQL Database: PostgreSQL serves as the backbone of the application, ensuring secure and reliable data storage.
 * Prisma ORM: Prisma acts as an efficient object-relational mapper (ORM), simplifying database interactions and enhancing developer productivity.
-  
 
-![alt text](image.png)
-![alt text](image-1.png)
 
 Frontend Experience:
 

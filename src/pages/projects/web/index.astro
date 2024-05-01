@@ -32,13 +32,13 @@ const apps = (await getCollection('apps')).sort((a, b) => b.data.publishDate.val
         <a href="/projects/meow-app">More details</a>
       </article>
     </div>
-    <div class="w-full grid md:grid-cols-4 justify-center items-center flex-wrap gap-5 mt-52">
+    <div class="w-full grid md:grid-cols-3 justify-center items-center flex-wrap gap-5 mt-52">
       {
         apps.map((app) => {
           return (
             <Card title={app.data.title} description={app.data.description} href={app.id}>
-              <p slot="header">imagen del header</p>
-              <p slot="base">Link del base</p>
+              <img slot="header" src={app.data.poster} alt={app.data.title + 'image'} class=""/>
+              <p slot="base">Link del base {app.slug}</p>
             </Card>
           );
         })
