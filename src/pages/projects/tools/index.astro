@@ -36,9 +36,9 @@ const tools = (await getCollection('tools')).sort((a, b) => b.data.publishDate.v
       {
         tools.map((tool) => {
           return (
-            <Card title={tool.data.title} description={tool.data.description} href={tool.id}>
+            <Card title={tool.data.title} description={tool.data.description} href={tool.data.link}>
               <img slot="header" src={tool.data.poster} alt={tool.data.title + 'image'} class=""/>
-              <p slot="base">Link del base {tool.slug}</p>
+              <a slot="base" href={tool.data.link} target="_blank">Github link</a>
             </Card>
           );
         })

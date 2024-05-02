@@ -38,7 +38,7 @@ const apps = (await getCollection('apps')).sort((a, b) => b.data.publishDate.val
           return (
             <Card title={app.data.title} description={app.data.description} href={app.id}>
               <img slot="header" src={app.data.poster} alt={app.data.title + 'image'} class=""/>
-              <p slot="base">Link del base {app.slug}</p>
+              <a slot="base" href={app.data.link} target="_blank">Go to live app</a>
             </Card>
           );
         })

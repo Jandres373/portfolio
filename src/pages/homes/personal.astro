@@ -13,7 +13,7 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata} >
+<Layout metadata={metadata}>
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
     <Header
@@ -27,8 +27,8 @@ const metadata = {
       ]}
       actions={[
         {
-          text: 'Hire me',
-          href: '#',
+          text: 'Contact me',
+          href: 'https://www.linkedin.com/in/julian-mosquera-09762029a/',
         },
       ]}
       isSticky
@@ -40,9 +40,16 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Julian Mosquera"
+    title="Julian Andres Mosquera"
     tagline="Web developement portfolio"
-    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: '/' }]}
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Contact me',
+        href: 'https://www.linkedin.com/in/julian-mosquera-09762029a/',
+      },
+    ]}
   >
     <Fragment slot="subtitle">
       I am a qualified and professional web developer with over 1 year of experience in backend and frontend
@@ -110,42 +117,51 @@ const metadata = {
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
-     {
+      {
         title: 'React',
-        description: 'I love React, and it\'s one of the main frontend frameworks I use. I enjoy building reusable components, managing complex state, and creating intuitive interfaces with React For small or medium size projects.',
+        description:
+          "I love React, and it's one of the main frontend frameworks I use. I enjoy building reusable components, managing complex state, and creating intuitive interfaces with React For small or medium size projects.",
       },
       {
         title: 'Angular',
-        description: 'I don\'t have extensive experience with Angular, but I\'m familiar with its core concepts like components, directives, services etc. I\'ve built a few small projects with Angular and would love to expand my knowledge further.',
+        description:
+          "I don't have extensive experience with Angular, but I'm familiar with its core concepts like components, directives, services etc. I've built a few small projects with Angular and would love to expand my knowledge further.",
       },
       {
         title: 'Next.js',
-        description: 'Next is the tech i\'d use for large or medium projects when I need interactivity and a fullstack framework. I love its hybrid approach to static and server-rendered pages and its flexibility. I\'ve built several projects with Next and it\'s a joy to work with.',
+        description:
+          "Next is the tech i'd use for large or medium projects when I need interactivity and a fullstack framework. I love its hybrid approach to static and server-rendered pages and its flexibility. I've built several projects with Next and it's a joy to work with.",
       },
 
       {
         title: 'Astro',
-        description: '`Astro` is the static site generator I use for building my personal site. I love its component-based approach and how well it integrates with React and markdown. Building sites with Astro feels super fast and intuitive.',
+        description:
+          '`Astro` is the static site generator I use for building my personal site. I love its component-based approach and how well it integrates with React and markdown. Building sites with Astro feels super fast and intuitive.',
       },
       {
         title: 'Node.js',
-        description: '`Node.js` is my go-to for building robust APIs and backend services. I love its asynchronous non-blocking nature which makes it perfect for realtime applications and microservices. Some of my most robust projects were built with Node.js/Express.',
+        description:
+          '`Node.js` is my go-to for building robust APIs and backend services. I love its asynchronous non-blocking nature which makes it perfect for realtime applications and microservices. Some of my most robust projects were built with Node.js/Express.',
       },
       {
         title: 'Express',
-        description: 'I\'d choose express for small backend projects. I love how minimal yet extensible it is. I\'ve built many small to medium sized APIs with Express for CRUD operations and authentication. Its routing capabilities are very flexible and it integrates well with other Node.js tools and libraries.',
+        description:
+          "I'd choose express for small backend projects. I love how minimal yet extensible it is. I've built many small to medium sized APIs with Express for CRUD operations and authentication. Its routing capabilities are very flexible and it integrates well with other Node.js tools and libraries.",
       },
       {
         title: 'Nest.js',
-        description: 'Nest.js would definetely be my choice for building large scale backend applications or REST APIs, microservices or more complex apps. I love its progressive framework approach and how seamlessly it integrates with TypeScript. Some key features like dependency injection, modules and OOP principles make it a joy to work with for complex backend systems.',
+        description:
+          'Nest.js would definetely be my choice for building large scale backend applications or REST APIs, microservices or more complex apps. I love its progressive framework approach and how seamlessly it integrates with TypeScript. Some key features like dependency injection, modules and OOP principles make it a joy to work with for complex backend systems.',
       },
       {
         title: 'Tensorflow.js',
-        description: 'I\'m just starting my journey with ML, but. I enjoy exploring ML concepts with Tensorflow.js for browser or Node.js based projects. Some areas that interest me include computer vision, NLP and time series forecasting. I find its intuitive APIs and seamless integration with frontend frameworks very appealing.',
+        description:
+          "I'm just starting my journey with ML, but. I enjoy exploring ML concepts with Tensorflow.js for browser or Node.js based projects. Some areas that interest me include computer vision, NLP and time series forecasting. I find its intuitive APIs and seamless integration with frontend frameworks very appealing.",
       },
       {
         title: 'Pytorch',
-        description: 'Pytorch would be my choice for building deep learning models and training complex neural networks. I find its dynamic graph execution, built-in support for GPU acceleration and flexibility make it a very powerful framework for computer vision, NLP and general deep learning tasks. I\'ve built a few basic deep learning models with Pytorch and would love to expand my knowledge further.',
+        description:
+          "Pytorch would be my choice for building deep learning models and training complex neural networks. I find its dynamic graph execution, built-in support for GPU acceleration and flexibility make it a very powerful framework for computer vision, NLP and general deep learning tasks. I've built a few basic deep learning models with Pytorch and would love to expand my knowledge further.",
       },
     ]}
   />
@@ -158,20 +174,26 @@ const metadata = {
     items={[
       {
         title:
-          'Academlo <br /> <span class="font-normal">Remote, Mexico. MX</span> <br /> <span class="text-sm font-normal">2023 - 2023</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'No Country.<br /> <span class="font-normal">Remote, Argentina. AR</span> <br /> <span class="text-sm font-normal">2023 - 2024</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          'Meow English.<br /> <span class="font-normal">Freelance, Colombia, CO</span> <br /> <span class="text-sm font-normal">2024 - current</span>',
+        description: `I developped the full-stack application of Meow English app, contributing from UX/UI design to front end, back end, database management, and deployment. I implemented responsive designs and interactive features, while on the back end, I designed robust server-side logic and APIs for smooth performance. Additionally, I managed database structures and ensured data integrity, while overseeing deployment processes for seamless transitions. This experience enriched my skills and proficiency in diverse technologies, enabling me to deliver top-notch solutions.`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'CoCode.<br /> <span class="font-normal">Remote, Colombia, CO</span> <br /> <span class="text-sm font-normal">2023 - current</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        description: `I played a crucial role in the development of CoCode, where I developed the frontend of the app. Utilizing my expertise in frontend technologies, I crafted intuitive user interfaces and implemented interactive features to enhance user experience and engagement. My contributions were instrumental in delivering a polished and user-friendly application interface.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'No Country.<br /> <span class="font-normal">Remote, Argentina. AR</span> <br /> <span class="text-sm font-normal">2023 - 2024</span>',
+        description: `Participated in various simulations in No Country, where I utilized the MERN stack to contribute to both front and backend development, creating multiple projects throughout my involvement. I acquired the ability to collaborate with teams of over 16 individuals from diverse backgrounds and skill sets. This experience reinforced my soft skills and provided me with the opportunity to lead frontend development teams.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Academlo <br /> <span class="font-normal">Remote, Mexico. MX</span> <br /> <span class="text-sm font-normal">2023 - 2023</span>',
+        description: `Developped more than 16 projects through the lenght of the preparation. where I learned React and JavaScript basics.`,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -185,11 +207,11 @@ const metadata = {
     title="Education"
     items={[
       {
-        title: `Anthropologist <br /> <span class="font-normal">Universidad del Cauca - Universidad de Antioquia</span> <br /> <span class="text-sm font-normal">2013 - 2020</span>`,
+        title: `Fullstack web development <br /> <span class="font-normal">Academlo</span> <br /> <span class="text-sm font-normal">2023 - 2023</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Fullstack web development <br /> <span class="font-normal">Academlo</span> <br /> <span class="text-sm font-normal">2023 - 2023</span>`,
+        title: `Anthropologist <br /> <span class="font-normal">Universidad del Cauca - Universidad de Antioquia</span> <br /> <span class="text-sm font-normal">2013 - 2020</span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -207,7 +229,7 @@ const metadata = {
       {
         title: 'Description:',
         description:
-          'From web pages to chrome extensions. Everything I\'d like to show you about my web developement background.',
+          "From web pages to chrome extensions. Everything I'd like to show you about my web developement background.",
       },
       {
         title: 'Techs:',
@@ -315,7 +337,32 @@ const metadata = {
 
   <!-- Testimonials Widget *********** -->
 
-  <Github id="github" title="Personal Github profile" subtitle="Here you can find the projects I've worked in" />
+  <Github
+    id="github"
+    title="Personal Github profile"
+    subtitle="Here you can find the projects I've worked in"
+    callToAction={{
+      variant: 'primary',
+      target: '_blank',
+      text: 'Go to my profile',
+      href: 'https://github.com/Jandres373',
+    }}
+  />
+
+  <div class="flex justify-center">
+    <img
+      src="https://streak-stats.demolab.com?user=jandres373&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3"
+      height="220"
+      alt="streak graph"
+    />
+  </div>
+
+  <div class="flex justify-center">
+    <img src="https://profile-counter.glitch.me/jandres373/count.svg?" />
+  </div>
+
+  <!--
+  **Jandres373/Jandres373** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
   <!-- CallToAction Widget *********** -->
 
@@ -325,8 +372,8 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Hire me',
-        href: '/',
+        text: 'Contact me',
+        href: 'https://www.linkedin.com/in/julian-mosquera-09762029a/',
       },
     ]}
   />

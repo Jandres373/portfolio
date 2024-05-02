@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-02-18T00:00:00Z
-title: Simu restaurant.
+title: Comanda click.
 description: This was a multidisciplinary experience I had as part of an incredible team when I was exploring No Country's dynamics.
 poster: https://res.cloudinary.com/dwzcbbipf/image/upload/v1714458257/portfolio/utdzeofaah2dizzowoqr.png
 link: https://frontend-simu-restaurante.vercel.app/

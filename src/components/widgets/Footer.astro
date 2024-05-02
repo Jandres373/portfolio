@@ -28,42 +28,68 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
 
 <footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
-      <div class="col-span-12 lg:col-span-4">
-        <div class="mb-2">
-          <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
-        </div>
-        <div class="text-sm text-muted">
-        
-        </div>
-      </div>
-     
-    </div>
-    <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-      {
-        socialLinks?.length ? (
-          <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
-            {socialLinks.map(({ ariaLabel, href, text, icon }) => (
+  <div class="relative max-w-full mx-auto px-4 sm:px-6 dark:text-slate-300">
+    <div class="flex flex-col">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid mt-5 grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-16">
+          <div class="space-y-4">
+            <h4 class="text-lg font-semibold">About me</h4>
+            <p class="text-sm">
+              JAM WEB DEV develops initiatives using AI and full-stack development to contribute to solving general
+              community issues.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                class="text-gray-400 transition-colors hover:text-gray-50"
+                href={'https://www.linkedin.com/in/julian-mosquera-09762029a/'}
+              >
+              </a>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-lg font-semibold">Check my projects</h4>
+            <ul class="space-y-2">
               <li>
-                <a
-                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                  aria-label={ariaLabel}
-                  href={href}
-                >
-                  {icon && <Icon name={icon} class="w-5 h-5" />}
-                  <Fragment set:html={text} />
-                </a>
+                <a class="text-gray-400 transition-colors hover:text-gray-50" href="#"> CoCode</a>
               </li>
-            ))}
-          </ul>
-        ) : (
-          ''
-        )
-      }
-
-      <div class="text-sm mr-4 dark:text-slate-400">
-      
+              <li>
+                <a class="text-gray-400 transition-colors hover:text-gray-50" href="#"> PDF Reader</a>
+              </li>
+              <li>
+                <a class="text-gray-400 transition-colors hover:text-gray-50" href="#"> AI Learning assistant</a>
+              </li>
+              <li>
+                <a class="text-gray-400 transition-colors hover:text-gray-50" href="#"> Gestures recognition</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-lg font-semibold">Contact me</h4>
+            <ul class="space-y-2">
+              <li>
+                <div class="flex items-center space-x-2">
+                  <span>Not available</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center space-x-2">
+                  <span>jam.webdesign.01@gmail.com</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center space-x-2">
+                  <span>Medellín, CO.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-lg font-semibold">Subscribe</h4>
+            <p>Subscribe now to stay updated with the latest news and updates about my projects!</p>
+            <form class="flex space-x-2"></form>
+          </div>
+        </div>
+        <div class="mt-8 text-center text-sm md:mt-12">© 2024 JAM WEB DEV.</div>
       </div>
     </div>
   </div>

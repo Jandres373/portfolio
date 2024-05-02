@@ -3,7 +3,7 @@ publishDate: 2024-04-09T00:00:00Z
 title: Meow english app.
 description: Meow an app to help people learn english.
 poster: https://res.cloudinary.com/dwzcbbipf/image/upload/v1714506663/portfolio/abfqswgkmdf7pqudlwsp.png
-link: https://acd-react-entregable-4.netlify.app/
+link: https://meow-english.vercel.app/welcome
 tags:
   - Next
   - Fullstack
