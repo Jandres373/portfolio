@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: J.A.M_WebDev
     images:
-      - url: '~/assets/images/portfolio.png'
+      - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
