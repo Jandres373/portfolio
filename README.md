@@ -1,6 +1,6 @@
 # 🚀 JAM WEB DEV PORTFOLIO - on AstroWind
 
-[Visita mi Portafolio](https://jam-webdev-portfolio1.netlify.app/)
+[Visit my portfolio](https://jam-webdev-portfolio1.netlify.app/)
 
 **Hey there! I'm Julian, a passionate anthropologist and web developer based in Colombia.
 
