@@ -2,7 +2,7 @@
 
 [Visit my portfolio](https://jam-webdev-portfolio1.netlify.app/)
 
-**Hey there! I'm Julian, a passionate anthropologist and web developer based in Colombia.
+Hey there! I'm Julian, a passionate anthropologist and web developer based in Colombia.
 
 What's my current goal? Adding a neuro-cultural twist to development, ensuring digital solutions are not just techy but also human-friendly and adaptable.
 
